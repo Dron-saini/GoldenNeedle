@@ -9,7 +9,7 @@ export default function TailorProfile() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:2007/tailor/${id}`)
+      .get(`https://golden-needle-backend.vercel.app/tailor/${id}`)
       .then((res) => {
         console.log("DATA:", res.data);
         setTailor(res.data);
@@ -33,7 +33,7 @@ export default function TailorProfile() {
       <div className="relative z-10 max-w-4xl mx-auto bg-white shadow-xl rounded-2xl p-6">
         {/* Profile Image */}
         <img
-          src={tailor.profileImage || "https://via.placeholder.com/300"}
+          src={tailor.profileImage || "httpss://via.placeholder.com/300"}
           alt={tailor.name}
           className="w-full h-64 object-cover rounded-xl mb-6"
         />

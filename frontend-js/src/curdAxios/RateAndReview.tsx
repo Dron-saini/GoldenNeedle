@@ -28,7 +28,7 @@ export default function RateAndReview() {
         setLoading(true);
 
         const res = await axios.get(
-          `http://localhost:2007/api/tailor/find-by-mobile/${mobile}`
+          `https://golden-needle-backend.vercel.app/api/tailor/find-by-mobile/${mobile}`
         );
 
         setTailorName(res.data.name);
@@ -55,7 +55,7 @@ export default function RateAndReview() {
     }
 
     try {
-      await axios.post("http://localhost:2007/api/review", {
+      await axios.post("https://golden-needle-backend.vercel.app/api/review", {
         mobile,
         star,
         review,
@@ -67,7 +67,7 @@ export default function RateAndReview() {
       setReview("");
 
       const res = await axios.get(
-        `http://localhost:2007/api/tailor/find-by-mobile/${mobile}`
+        `https://golden-needle-backend.vercel.app/api/tailor/find-by-mobile/${mobile}`
       );
 
       setAvgRating(res.data.avgRating);

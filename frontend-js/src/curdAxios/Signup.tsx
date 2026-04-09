@@ -65,7 +65,7 @@ export default function Signup() {
     if (!validate()) return;
 
     try {
-      const url = "http://localhost:2007/user/signup";
+      const url = "https://golden-needle-backend.vercel.app/user/signup";
       await axios.post(url, form, {
         headers: { "Content-Type": "application/json" },
       });
@@ -121,7 +121,7 @@ export default function Signup() {
               </p>
               <div className="flex gap-4 mt-2 text-lg items-center">
                 <a
-                  href="https://instagram.com/saini.dron"
+                  href="httpss://instagram.com/saini.dron"
                   target="_blank"
                   className="text-pink-600 hover:scale-110 transition"
                 >
@@ -129,7 +129,7 @@ export default function Signup() {
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/dron-saini-667339336"
+                  href="httpss://linkedin.com/in/dron-saini-667339336"
                   target="_blank"
                   className="text-blue-600 hover:scale-110 transition"
                 >

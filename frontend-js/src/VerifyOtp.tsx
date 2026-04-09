@@ -12,7 +12,7 @@ export default function VerifyOTP() {
   const handleVerify = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:2007/user/verify-otp",
+        "https://golden-needle-backend.vercel.app/user/verify-otp",
         { emailid, otp }
       );
 

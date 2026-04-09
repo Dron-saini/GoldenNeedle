@@ -18,7 +18,7 @@ export default function TailorDashboard() {
 
     // ✅ STEP 2: Safe API call
     axios
-      .get(`http://localhost:2007/tailor/profile/${email}`)
+      .get(`https://golden-needle-backend.vercel.app/tailor/profile/${email}`)
       .then((res) => {
   console.log("API RESPONSE:", res.data);
 
@@ -58,7 +58,7 @@ export default function TailorDashboard() {
         
         {/* IMAGE */}
         <img
-          src={tailor.profileImage || "https://via.placeholder.com/100"}
+          src={tailor.profileImage || "httpss://via.placeholder.com/100"}
           alt={tailor.name}
           className="w-24 h-24 rounded-full mx-auto object-cover mb-4 border"
         />
